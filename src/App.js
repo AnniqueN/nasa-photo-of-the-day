@@ -14,10 +14,10 @@ function App() {
 
   useEffect(() => {
     const getData = async () => {
-      return await axios.get("https://api.nasa.gov/planetary/apod", {
+      return await axios.get("https://api.nasa.gov/planetary/apod?api_key=cvQfsM1Yd2opQ3UAQEufPMMPRinnTReNGgUeirlt&date=2012-03-14", {
         params: {
           date: date,
-          api_key: "DEMO_KEY"
+          api_key: "cvQfsM1Yd2opQ3UAQEufPMMPRinnTReNGgUeirlt"
         }
       });
     };
@@ -34,7 +34,7 @@ function App() {
   const handleChange = event => {
     setDate(event.target.value);
   };
-
+  //Message while the data is fetching
   if (!data) {
     return <div className="loading">Loading...</div>;
   }
