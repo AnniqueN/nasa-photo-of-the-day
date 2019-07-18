@@ -7,7 +7,7 @@ const ApodTitle = () => {
     <>
       <h1 className="Title">APOD</h1>
       <section className="description">
-        <p>From NASA website:</p>
+               <p>From NASA website:</p>
         <blockquote cite="https://api.nasa.gov/api.html#apod">
           One of the most popular websites at NASA is the {""}
           <strong>Astronomy Picture of the Day</strong>. In fact, this website
