@@ -4,9 +4,9 @@ import React, {useState, useEffect} from "react";
 import axios from "axios";
 
 import "./App.css";
-import ApodTitle from "./ApodTitle"
-import ApodMediaImage from "./ApodMediaImage";
-import DateSelector from "./DateSelector";
+import ApodTitle from "./Components/ApodTitle"
+import ApodMediaImage from "./Components/ApodMediaImage";
+import DateSelector from "./Components/DateSelector";
 
 function App() {
   const [data, setData] = useState();
@@ -14,7 +14,7 @@ function App() {
 
   useEffect(() => {
     const getData = async () => {
-      return await axios.get("https://api.nasa.gov/planetary/apod?api_key=cvQfsM1Yd2opQ3UAQEufPMMPRinnTReNGgUeirlt&date=2012-03-14", {
+      return await axios.get("https://api.nasa.gov/planetary/apod?api_key=NNKOjkoul8n1CH18TWA9gwngW1s1SmjESPjNoUFo", {
         params: {
           date: date,
           api_key: "cvQfsM1Yd2opQ3UAQEufPMMPRinnTReNGgUeirlt"
